@@ -1,5 +1,6 @@
 import React from 'react'
 import './GithubCard.css'
+import GitHubCalendar from 'react-github-calendar'
 
 class GithubCard extends React.Component {
 
@@ -17,6 +18,7 @@ class GithubCard extends React.Component {
                 <p><span className='bold'>Github:</span> {this.props.githubData.html_url}</p>
                 <p><span className='bold'>Following:</span> {this.props.githubData.following}</p>
                 <p><span className='bold'>Followers:</span> {this.props.githubData.followers}</p>
+                <GitHubCalendar username='patrickharl' fullYear={false} />
             </div>
 
 
